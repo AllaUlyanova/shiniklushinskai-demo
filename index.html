@@ -225,6 +225,8 @@
     .book button.v-btn { justify-content: center; }
     .close__tel { font-size: var(--v-t-lg); }
   }
+  /* широкий экран: на 1700 px и больше масштабируем rem, чтобы текст не оставался мелким (по ширине, но не выше, чем позволяет высота) */
+  @media (min-width: 1700px) { html { font-size: max(16px, min(.9375vw, 1.9vh)); } }
 </style>
 </head>
 <body>
